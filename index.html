@@ -1,0 +1,157 @@
+<html>
+	<head>
+		<style>
+			body{
+				font-family: verdana;
+			}
+			a{
+				color: #1F75DE;
+				text-decoration: none;
+			}
+			#item-one{
+				top: 2000px;
+				left: 0;
+				width: 100%;
+				text-align: center;
+			}
+			#item-two{
+				top: 2000px;
+				left: 0;
+				width: 100%;
+				text-align: center;
+			}
+			#effects-header{
+				top: -2000px;
+				left: 0px;
+				text-align: center;
+				font-size: 3em;
+				z-index: 2;
+				width: 100%;
+				margin: 0;
+				padding: 0;
+				color: #FFFFFF;
+			}
+			#effects-header-bg{
+				position: fixed!important;
+				top: -200px;
+				width: 100%;
+				height: 100px;
+				background-color: #25313D;
+				z-index: 1;
+			}
+			#effects-bg{
+				position: fixed!important;
+				top: 100%;
+				width: 100%;
+				height: 100%;
+				background-color: #1F75DE;
+				z-index: 1;
+			}
+			ul.effects{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				z-index: 2;
+				clear: both;
+				top: 120px;
+			}
+			ul.effects li{
+				position: relative!important;
+				top: 150%;
+				width: 25%;
+				float: left;
+				margin: 0;
+				padding: 0;
+				z-index: 2;
+				color: #FFFFFF;
+				text-align: center;
+				font-size: 2em;
+			}
+			#info-bg{
+				position: fixed!important;
+				top: 100%;
+				width: 100%;
+				height: 100%;
+				background-color: #E1E1E1;
+				z-index: 3;
+			}
+			ul.info{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				z-index: 4;
+				clear: both;
+				top: 200px;
+			}
+			ul.info li{
+				position: relative!important;
+				width: 33%;
+				float: left;
+				margin: 0;
+				padding: 0;
+				z-index: 4;
+				color: #FFFFFF;
+				text-align: center;
+				font-size: 2em;
+				opacity: 0;
+				color: #000000;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="animation">
+			<h1 id="item-one" class="animation-item" data-anim-action="move|fadeOut" data-anim-action-duration="1|1" data-anim-to="200px,0" data-anim-time="1|3" data-anim-easing="cubic-bezier(0.075, 0.820, 0.165, 1.000)|cubic-bezier(0.785, 0.135, 0.150, 0.860)" >
+				AnimateJs
+			</h1>
+			<h2 id="item-two" class="animation-item" data-anim-action="move|fadeOut" data-anim-action-duration="1|1" data-anim-to="250px,0" data-anim-time="1.5|3.5" data-anim-easing="cubic-bezier(0.075, 0.820, 0.165, 1.000)|cubic-bezier(0.785, 0.135, 0.150, 0.860)" >
+				A Simple Animating Library
+			</h2>
+			<h1 id="effects-header" class="animation-item" data-anim-action="move|zoomOut|move" data-anim-action-duration=".5|.5|1" data-anim-to="0,0|.8|-100px,0" data-anim-time="5|5.8|12" data-anim-easing="cubic-bezier(0.075, 0.820, 0.165, 1.000)|cubic-bezier(0.785, 0.135, 0.150, 0.860)|cubic-bezier(0.075, 0.820, 0.165, 1.000)" >
+				Effects : 
+			</h1>
+			<div id="effects-header-bg" class="animation-item" data-anim-action="move|move" data-anim-action-duration=".3|1" data-anim-to="0,0|-100px,0" data-anim-time="5.5|12.3" data-anim-easing="cubic-bezier(0.075, 0.820, 0.165, 1.000)|cubic-bezier(0.075, 0.820, 0.165, 1.000)" >
+			</div>
+			<div id="effects-bg" class="animation-item" data-anim-action="move|move" data-anim-action-duration=".5|.5" data-anim-to="100px,0|100%,0" data-anim-time="5.8|12.5" data-anim-easing="cubic-bezier(0.075, 0.820, 0.165, 1.000)|cubic-bezier(0.075, 0.820, 0.165, 1.000)" >
+			</div>
+			<ul class="effects">
+				<li id="move-effect" class="animation-item" data-anim-action="move" data-anim-action-duration=".8" data-anim-to="0,0" data-anim-time="6.5" data-anim-easing="cubic-bezier(0.075, 0.820, 0.165, 1.000)" >
+					<h3>Move</h3>
+				</li>
+				<li id="fade-effect" class="animation-item" data-anim-action="move|fadeOut|fadeIn" data-anim-action-duration=".8|1|1" data-anim-to="0,0" data-anim-time="7|9|10" data-anim-easing="cubic-bezier(0.075, 0.820, 0.165, 1.000)" >
+				<h3>FadeIn &amp; FadeOut</h3>
+				</li>
+				<li id="rotate-effect" class="animation-item" data-anim-action="move|rotate|rotate|rotate" data-anim-action-duration=".8|.5|.5|.5" data-anim-to="0,0|45|-45|0" data-anim-time="7.5|9|10|11" data-anim-easing="cubic-bezier(0.075, 0.820, 0.165, 1.000)|cubic-bezier(0.075, 0.820, 0.165, 1.000)|cubic-bezier(0.075, 0.820, 0.165, 1.000)|cubic-bezier(0.075, 0.820, 0.165, 1.000)" >
+					<h3>Rotate</h3>
+				</li>
+				<li id="zoom-effect" class="animation-item" data-anim-action="move|zoomIn|zoomOut" data-anim-action-duration=".8|.5|.5" data-anim-to="0,0|1.3|1" data-anim-time="8|9|10" data-anim-easing="cubic-bezier(0.075, 0.820, 0.165, 1.000)|cubic-bezier(0.075, 0.820, 0.165, 1.000)|cubic-bezier(0.075, 0.820, 0.165, 1.000)" >
+					<h3>ZoomIn &amp; ZoomOut</h3>
+				</li>
+			</ul>
+			<div id="info-bg" class="animation-item" data-anim-action="move" data-anim-action-duration=".5" data-anim-to="0,0" data-anim-time="12.8" data-anim-easing="cubic-bezier(0.075, 0.820, 0.165, 1.000)" >
+			</div>
+			<ul class="info">
+				<li id="github-link" class="animation-item" data-anim-action="fadeIn|zoomIn|zoomOut" data-anim-action-duration=".1|.3|.5" data-anim-to="0|1.5|1" data-anim-time="13.5|13.5|13.8" data-anim-easing="cubic-bezier(0.075, 0.820, 0.165, 1.000)|cubic-bezier(0.075, 0.820, 0.165, 1.000)|cubic-bezier(0.075, 0.820, 0.165, 1.000)" >
+					<h3><a target="_blank" href="//github.com">Source</a></h3>
+				</li>
+				<li id="developer-link" class="animation-item" data-anim-action="fadeIn|zoomIn|zoomOut" data-anim-action-duration=".1|.3|.5" data-anim-to="0|1.5|1" data-anim-time="14|14|14.3" data-anim-easing="cubic-bezier(0.075, 0.820, 0.165, 1.000)|cubic-bezier(0.075, 0.820, 0.165, 1.000)|cubic-bezier(0.075, 0.820, 0.165, 1.000)" >
+					<h3><a target="_blank" href="http://dorparasti.ir">Developer</a></h3>
+				</li>
+				<li id="feedback-link" class="animation-item" data-anim-action="fadeIn|zoomIn|zoomOut" data-anim-action-duration=".1|.3|.5" data-anim-to="0|1.5|1" data-anim-time="14.5|14.5|14.8" data-anim-easing="cubic-bezier(0.075, 0.820, 0.165, 1.000)|cubic-bezier(0.075, 0.820, 0.165, 1.000)|cubic-bezier(0.075, 0.820, 0.165, 1.000)" >
+					<h3><a target="_blank" href="mailto:mohsen@dorparasti.ir">Feedback</a></h3>
+				</li>
+			</ul>
+		</div>
+		<div id="timer"></div>
+		<!-- scripts -->
+		<script src="js/animate.js" ></script>
+		<script>
+			animate.start();
+		</script>
+	</body>
+</html>
